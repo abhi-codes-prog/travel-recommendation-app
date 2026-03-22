@@ -4,7 +4,11 @@ function searchPlace() {
 
   cards.forEach(card => {
     let text = card.innerText.toLowerCase();
-    card.style.display = text.includes(input) ? "block" : "none";
+    if (text.includes(input)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
   });
 }
 
