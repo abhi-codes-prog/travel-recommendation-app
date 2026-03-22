@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Travel App</title>
+  <title>Travel Recommendation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
 </nav>
 
 <h1>Travel Recommendation</h1>
-<input type="text" id="search" placeholder="Search..." onkeyup="searchPlace()">
 
+<input type="text" id="search" placeholder="Search destinations...">
+<button onclick="searchPlace()">Search</button>
+<button onclick="clearSearch()">Clear</button>
+
+<h2>Beaches</h2>
 <div class="card">Goa Beach <img src="https://source.unsplash.com/300x200/?beach"></div>
-<div class="card">Maldives Beach <img src="https://source.unsplash.com/300x200/?maldives"></div>
+<div class="card">Maldives Beach <img src="https://source.unsplash.com/300x200/?beach,maldives"></div>
 
-<div class="card">Temple India <img src="https://source.unsplash.com/300x200/?temple"></div>
-<div class="card">Temple Japan <img src="https://source.unsplash.com/300x200/?japan-temple"></div>
+<h2>Temples</h2>
+<div class="card">Indian Temple <img src="https://source.unsplash.com/300x200/?temple,india"></div>
+<div class="card">Japanese Temple <img src="https://source.unsplash.com/300x200/?temple,japan"></div>
 
+<h2>Countries</h2>
 <div class="card">France <img src="https://source.unsplash.com/300x200/?france"></div>
 <div class="card">USA <img src="https://source.unsplash.com/300x200/?usa"></div>
 
